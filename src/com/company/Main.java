@@ -11,7 +11,7 @@ public class Main {
             Scanner keyboard = new Scanner(System.in);
             System.out.println("Are your eyes red?");
             answer = keyboard.next();
-            if (answer.equals("y")) {
+            if (answer.equalsIgnoreCase("y") || answer.equalsIgnoreCase("yes")) {
                 System.out.println("Get some sleep!");
             } else {
                 System.out.println("You look great!");
@@ -19,7 +19,7 @@ public class Main {
             System.out.println("Do you want to try again?");
             answer = keyboard.next();
 
-        } while (answer.equals("y"));
+        } while (answer.equalsIgnoreCase("y") ||answer.equalsIgnoreCase("yes"));
 
     }
 }
